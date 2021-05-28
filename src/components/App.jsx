@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Note from "./Note";
-import CreateArea from "./CreateArea";
 import Signin from "./Signin";
-
+import CreateArea from "./CreateArea";
 
 function App() {
   const [notes, setNotes] = useState([]);
@@ -27,6 +26,7 @@ function App() {
   return (
     <div>
       <Header />
+      <Signin/>
       <CreateArea onAdd={addNote} />
       {notes.map((noteItem, index) => {
         return (
@@ -41,6 +41,7 @@ function App() {
           />
         );
       })}
+     
       <Footer />
     </div>
   );

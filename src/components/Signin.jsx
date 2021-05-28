@@ -20,7 +20,7 @@ function Signin() {
 
   return (
     <div className="container">
-      <h1>
+      {/* <h1>
         Hello
       </h1>
       <form>
@@ -43,7 +43,37 @@ function Signin() {
           placeholder="Email"
         />
         <button>Submit</button>
+      </form> */}
+        
+  <form class="login_form">
+    <h1 class="login_form_">Hello</h1>
+     <div class="group">
+        <input
+          onChange={handleChange}
+          name="fName"
+          value={contact.fName}
+          placeholder="First Name"
+        />
+    </div>
+     <div class="group">
+        <input
+          onChange={handleChange}
+          name="lName"
+          value={contact.lName}
+          placeholder="Last Name"
+        />
+    </div>
+     <div class="group">
+        <input
+          onChange={handleChange}
+          name="email"
+          value={contact.email}
+          placeholder="Email"
+        />
+    </div>
+        <button>Submit</button>
       </form>
+  
     </div>
   );
 }
