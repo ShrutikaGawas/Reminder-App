@@ -14,7 +14,7 @@ body {
 
 header {
   background-color: #ff8882;
-  margin: auto -16px;
+  margin: auto auto;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
@@ -61,7 +61,7 @@ h4 {
   position: relative;
   float: right;
   margin-right: 10px;
-  color: #98ddca;
+  color: white;
   border: none;
   width: 36px;
   height: 36px;
@@ -71,7 +71,7 @@ h4 {
 
 form.create-note {
   position: relative;
-  width: 480px;
+  width: 350px;
   margin: 30px auto 20px auto;
   background: #fff;
   padding: 15px;
@@ -121,7 +121,6 @@ form.create-note button {
 .container {
   padding: 100px 100px;
   text-align: center;
-  background: #0bcac7;
   position: relative;
   display: flex;
   align-items: center;
@@ -131,7 +130,7 @@ form.create-note button {
 .container h1 {
   font-size: 40px;
   font-weight: 200;
-  color: #fff;
+  color: black;
 }
 
 .container input {
@@ -152,10 +151,10 @@ form.create-note button {
 .container button {
   appearance: none;
   outline: 0;
-  background-color: rgba(128, 218, 230, 0.781);
+  background-color: rgba(32, 32, 32, 0.781);
   border: 0;
   padding: 10px 15px;
-  color: #5ff3f1;
+  color: white;
   border-radius: 3px;
   width: 250px;
   font-size: 18px;
@@ -168,6 +167,7 @@ form.create-note button {
   backdrop-filter: blur(10px);
   border-radius: 12px;
   border: 2px outset #fff;
+  color: black;
   position: center;
   box-shadow: 0 2px 6px #0002, 0 5px 16px #0005;
 }
@@ -175,24 +175,12 @@ form.create-note button {
   position: relative;
   margin-top: 30px;
 }
-.container .login_form .group input {
-  background-color: #0002;
-  border-radius: 4px;
-  padding: 6px 25px 6px 10px;
-  display: block;
-  width: 100%;
-  box-shadow: -1px 1px 2px #0002 inset;
-  color: #fff;
-  font-size: 16px;
-  border: 1px outset #fff5;
-  transition: border-radius 0.3s;
-}
 
 .container .login_form .group input:valid + label,
 .container .login_form .group input:focus + label {
   top: -14px;
   left: 0;
-  color: #fff;
+  color: black;
   font-size: 12px;
 }
 
@@ -201,14 +189,13 @@ form.create-note button {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  color: #fffe;
+  color: black;
   text-shadow: 0 0 1px #0007;
 }
 
 .container .login_form button {
   border: 2px outset #ffffff78;
   display: inline-block;
-  background: linear-gradient(45deg, #ffffff05, #ffffff61);
   padding: 8px 25px;
   border-radius: 4px;
   color: #fff;
@@ -220,8 +207,8 @@ form.create-note button {
   transition: 0.3s ease-in-out;
 }
 
-.container .login_form button:hover {
-  background: linear-gradient(-45deg, #ffffff05, #ffffff61);
+.container .login_form button button:hover {
+  background: white;
 }
 
 .container .login_form button:active {

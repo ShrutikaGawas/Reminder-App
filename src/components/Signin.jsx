@@ -20,32 +20,37 @@ function Signin() {
 
   return (
     <div className="container">
-      {/* <h1>
-        Hello
-      </h1>
       <form>
+      <h1 class="login_form_"> Hello </h1>
+        <div class="group">
         <input
           onChange={handleChange}
           name="fName"
           value={contact.fName}
           placeholder="First Name"
         />
+        </div>
+        <div class="group">
         <input
           onChange={handleChange}
           name="lName"
           value={contact.lName}
           placeholder="Last Name"
-        />
+        />  
+        </div>
+        <div class="group">
         <input
           onChange={handleChange}
           name="email"
           value={contact.email}
           placeholder="Email"
         />
-        <button>Submit</button>
-      </form> */}
+        </div>
         
-  <form class="login_form">
+        <button>Submit</button>
+      </form>
+        
+  {/* <form class="login_form">
     <h1 class="login_form_">Hello</h1>
      <div class="group">
         <input
@@ -72,7 +77,7 @@ function Signin() {
         />
     </div>
         <button>Submit</button>
-      </form>
+      </form> */}
   
     </div>
   );
